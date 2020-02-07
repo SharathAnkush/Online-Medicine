@@ -1,0 +1,232 @@
+
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem; 
+$header4: 2rem;
+$text: 2.5rem;
+$btncolor:#E074A3;
+$gradient: linear-gradient(left, #FE002E , #1b0bfaec );
+$gradient2: linear-gradient(left, rgb(237, 254, 0) , #57fa0bec );
+
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@import "Home";
+@import "Medicine";
+@import "Contact";
+
+
+@media screen and (max-width:1310px){
+    .header{
+        width: 100%;
+    }
+    .svg,
+    .svg-2{
+        display: none;
+    }
+        
+   .med-icon{
+       height: 36%;
+   }
+  
+}
+
+@media screen and (max-width:1153px){
+    .med-icon{
+        filter: blur(1px);
+    }
+}
+
+@media screen and (max-width:976px){
+    .intro-title,
+    .svg{
+        flex: 1 1 20rem;
+    }
+
+}
+
+@media screen and (max-width:804px){
+     .intro-svg{
+        flex: 1 1 10rem;
+    }
+
+    .med-icon{
+        z-index: -1;
+    }
+          
+}
+
+@media screen and (max-width:750px){
+  html, body{
+      overflow-x: hidden;
+  }
+ 
+    .bur{
+        display: block;
+    }
+     
+   nav ul{
+       position: absolute;
+       right: 0px;
+       height: 500px;
+       top: 8vh;
+       background: rgb(0, 0, 0);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 200px;
+       transform: translateY(-116%);
+       z-index:2;
+       transition: transform 0.3s ease-in;
+       overflow: hidden;
+    }
+
+    header ul a{
+       color:white;
+    }
+    
+ .nav-active{
+    transform: translateY(0%);
+  }
+
+  .burgeranimetion .line1{
+      transform: rotate(-45deg) translate(-5px,7px);
+
+  }
+  .burgeranimetion .line2{
+
+     opacity: 0;
+  }
+
+  .burgeranimetion .line3{
+    transform: rotate(45deg) translate(-5px,-7px);
+      
+  }
+      
+}
+
+@media screen and (max-width:654px){
+    .footer{
+        div{
+            h2{
+                font-size: 1rem;
+            }
+        }
+        .dev{
+            h2{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+   
+@media screen and (max-width:480px){
+    .intro-title{
+        h1,q.p{
+           
+        padding-left: 3rem;
+
+        }
+    }
+
+    .sec-1{
+        width: 100%;
+        margin-left: .5rem;
+        
+
+        .pro-img{
+         img{
+             width: 350px;
+         }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:420px){
+    .dev{
+        h2{
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width:412px){
+
+ header .icon{
+        flex: 0 0 0rem;
+    }
+}
+
+@media screen and (max-width:411px){
+    .intro-title{
+        .p{
+            padding-right: 0rem;
+        }
+
+    }
+    
+}
+
+@media screen and (max-width:375px){
+   
+    header .icon{
+        flex: 0 0 0rem;
+    }
+
+    .intro-title .p {
+        padding-right:0 ;
+    }
+    .con-text
+    h1{
+        font-size: 2.5rem;
+        margin-top: 1rem;
+
+    }
+
+    .contact button{
+        margin: 1.5rem;
+    }
+
+}
+
+
+@media screen and (max-width:360px){
+    
+   
+    .intro-title {
+        h1{
+            font-size: 3rem;
+
+
+        }
+        .p{
+            padding: 0rem;
+        }
+    }
+   
+
+    .intro-svg{
+        .svg{
+            flex: 1 1 0rem;
+        }
+    }
+
+    .con-text
+    h1{
+        font-size: 2rem;
+        margin-top: 1rem;
+
+    }
+
+    .contact button{
+        margin: 1rem;
+    }
+}

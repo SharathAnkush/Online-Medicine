@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+header{
+    width: 95%;
+    margin: 0 0 0 auto;
+
+    nav{
+        @include flex(space-between, center, row);
+         min-height: 10vh;
+         width: 90%;
+         flex-wrap: wrap;
+        border-bottom: 1.7px solid rgb(126, 122, 122) ;
+
+   
+    }
+    .icon{
+        flex: 1 1 20rem;
+    
+    }
+
+    ul,
+    .li{
+       
+        z-index: 2;
+        list-style: none;
+        flex: 1 1 20rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+       
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+        }
+    }
+
+
+}
+
+        
+.bur div{
+    width: 25px;
+    height: 5px;
+    margin: 4px;
+    background-color:$btncolor;
+    transition: all 0.3s ease;
+}
+.bur{
+    display: none;
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.intro{
+    width: 100%;
+    height: 90vh;
+    flex-wrap: wrap;
+    @include flex(space-between, center, row);
+    margin: auto;
+    position: relative;
+}
+
+.svg{
+    z-index: -1;
+    top: -3%;
+    left:5%;
+    height: 80%;
+    position: relative;
+}
+.svg-2{
+    z-index: -2;
+    top: 0%;
+    left:1%;
+    height: 95%;
+    position: absolute;
+}
+
+.svg-3{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+.med-icon{
+    top:24%;
+    left: 20%;
+    position: absolute;
+}
+
+.intro-title{
+   @include flex(space-between, center, column);
+    flex-wrap: wrap;
+    margin-bottom:2rem;
+    
+    h1{
+        font-size: 4rem;
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        font-weight: 900;
+        z-index: 1;
+       
+    }
+    .p{
+        font-size: 1.5rem;
+         margin-top: 1rem;
+        color: rgb(110, 110, 110);  
+        padding-right: 15.2rem;
+        z-index: 1;
+    }
+}
+
+
+.intro-svg{
+    flex: 1 1 40rem;
+    margin-left: 3rem;
+}
+
+
+.intro-title{
+    flex: 2 1 40rem ;
+}

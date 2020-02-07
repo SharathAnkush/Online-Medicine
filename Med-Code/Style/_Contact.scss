@@ -1,0 +1,92 @@
+
+
+
+.contact{
+    min-height: 80vh;
+    flex-wrap: wrap;
+   @include flex(space-between,center,column);
+    
+   
+   h1{
+       margin-top: 2rem;
+    font-size: 4rem;
+    color: rgb(32, 32, 32);
+   }
+
+   
+.con-text,
+.form{
+    @include flex(space-between,center,column);
+    width:30%;
+    text-align: center;
+}
+
+label,input,textarea{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+input,
+#message-input{
+    border-radius: 8px;
+   padding-left: 1rem;
+    border: 1.2px solid black;
+    background: rgb(236, 234, 234);
+    &:focus {
+        border: 2px solid $btncolor;
+        outline: none;
+    }
+}
+
+
+button{
+    background: $btncolor;
+    border: none;
+    padding: 1rem 4rem;
+    margin: 2rem;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 3px;
+}
+}
+.footer{
+    min-height: 10vh;
+    width: 100%;
+    @include flex(space-around,center,row);
+    background-color: $btncolor;
+      flex: 1 1 40rem;
+      flex-wrap: wrap;
+
+    div{
+        margin-left: 1rem;
+        a{
+            color: rgba(0, 4, 250, 0.925);
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+    }
+    .dev{
+        margin: 0 0.3rem;
+        h2{
+            font-size: 1.2rem;
+     }
+        a{
+            text-decoration: none;
+         i{
+            padding-left: 0.2rem;
+            padding-top: 0.2rem;
+            font-weight: 700;
+            font-size: 1.2rem;
+          }
+       }
+    }
+  div .dev{
+      display: flex;
+      flex: 1 1 40rem;
+  }
+}
